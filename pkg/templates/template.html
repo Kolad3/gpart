@@ -139,7 +139,7 @@ FACEBOOK: https://www.facebook.com/themefisher
                     </div>
                   </li>
                   <li class="header-get-a-quote">
-                    <a class="btn btn-primary" href="contact.html">Get A Quote</a>
+                    <a class="btn btn-primary" href="{{ url_for('contact') }}">Get A Quote</a>
                   </li>
                 </ul><!-- Ul end -->
             </div><!-- header right end -->
@@ -173,53 +173,33 @@ FACEBOOK: https://www.facebook.com/themefisher
                             <li><a href="{{ url_for('about') }}">About Us</a></li>
                             <li><a href="{{ url_for('team') }}">Our People</a></li>
                             <li><a href="{{ url_for('testimonials') }}">Testimonials</a></li>
-                            <li><a href="faq.html">Faq</a></li>
-                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="{{ url_for('faq') }}">Faq</a></li>
+                            <li><a href="{{ url_for('pricing') }}">Pricing</a></li>
                           </ul>
                       </li>
               
                       <li class="nav-item dropdown">
                           <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Projects <i class="fa fa-angle-down"></i></a>
                           <ul class="dropdown-menu" role="menu">
-                            <li><a href="projects.html">Projects All</a></li>
-                            <li><a href="projects-single.html">Projects Single</a></li>
+                            <li><a href="{{ url_for('projects_all') }}">Projects All</a></li>
                           </ul>
                       </li>
               
                       <li class="nav-item dropdown">
                           <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Services <i class="fa fa-angle-down"></i></a>
                           <ul class="dropdown-menu" role="menu">
-                            <li><a href="services.html">Services All</a></li>
-                            <li><a href="service-single.html">Services Single</a></li>
-                          </ul>
-                      </li>
-              
-                      <li class="nav-item dropdown">
-                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Features <i class="fa fa-angle-down"></i></a>
-                          <ul class="dropdown-menu" role="menu">
-                            <li><a href="typography.html">Typography</a></li>
-                            <li><a href="404.html">404</a></li>
-                            <li class="dropdown-submenu">
-                                <a href="#!" class="dropdown-toggle" data-toggle="dropdown">Parent Menu</a>
-                                <ul class="dropdown-menu">
-                                  <li><a href="#!">Child Menu 1</a></li>
-                                  <li><a href="#!">Child Menu 2</a></li>
-                                  <li><a href="#!">Child Menu 3</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="{{ url_for('services') }}">Services All</a></li>
                           </ul>
                       </li>
               
                       <li class="nav-item dropdown">
                           <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">News <i class="fa fa-angle-down"></i></a>
                           <ul class="dropdown-menu" role="menu">
-                            <li><a href="news-left-sidebar.html">News Left Sidebar</a></li>
-                            <li><a href="news-right-sidebar.html">News Right Sidebar</a></li>
-                            <li><a href="news-single.html">News Single</a></li>
+                            <li><a href="{{ url_for('news_right_sidebar') }}">News</a></li>
                           </ul>
                       </li>
               
-                      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                      <li class="nav-item"><a class="nav-link" href="{{ url_for('contact') }}">Contact</a></li>
                     </ul>
                 </div>
               </nav>
@@ -287,11 +267,11 @@ FACEBOOK: https://www.facebook.com/themefisher
           <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
             <h3 class="widget-title">Services</h3>
             <ul class="list-arrow">
-              <li><a href="service-single.html">Pre-Construction</a></li>
-              <li><a href="service-single.html">General Contracting</a></li>
-              <li><a href="service-single.html">Construction Management</a></li>
-              <li><a href="service-single.html">Design and Build</a></li>
-              <li><a href="service-single.html">Self-Perform Construction</a></li>
+              <li><a href="{{ url_for('service_single') }}">Pre-Construction</a></li>
+              <li><a href="{{ url_for('service_single') }}">General Contracting</a></li>
+              <li><a href="{{ url_for('service_single') }}">Construction Management</a></li>
+              <li><a href="{{ url_for('service_single') }}">Design and Build</a></li>
+              <li><a href="{{ url_for('service_single') }}">Self-Perform Construction</a></li>
             </ul>
           </div><!-- Col end -->
         </div><!-- Row end -->
@@ -312,11 +292,11 @@ FACEBOOK: https://www.facebook.com/themefisher
           <div class="col-md-6">
             <div class="footer-menu text-center text-md-right">
               <ul class="list-unstyled">
-                <li><a href="about.html">About</a></li>
-                <li><a href="team.html">Our people</a></li>
-                <li><a href="faq.html">Faq</a></li>
-                <li><a href="news-left-sidebar.html">Blog</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="{{ url_for('about') }}">About Us</a></li>
+                <li><a href="{{ url_for('team') }}">Our People</a></li>
+                <li><a href="{{ url_for('testimonials') }}">Testimonials</a></li>
+                <li><a href="{{ url_for('faq') }}">Faq</a></li>
+                <li><a href="{{ url_for('pricing') }}">Pricing</a></li>
               </ul>
             </div>
           </div>
