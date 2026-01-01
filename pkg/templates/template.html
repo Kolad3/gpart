@@ -163,17 +163,16 @@ FACEBOOK: https://www.facebook.com/themefisher
                       <li class="nav-item dropdown active">
                           <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Home <i class="fa fa-angle-down"></i></a>
                           <ul class="dropdown-menu" role="menu">
-                            <li class="active"><a href="index.html">Home One</a></li>
-                            <li><a href="index-2.html">Home Two</a></li>
+                            <li class="active"><a href="{{ url_for('home') }}">Home page</a></li>
                           </ul>
                       </li>
 
                       <li class="nav-item dropdown">
                           <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Company <i class="fa fa-angle-down"></i></a>
                           <ul class="dropdown-menu" role="menu">
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="team.html">Our People</a></li>
-                            <li><a href="testimonials.html">Testimonials</a></li>
+                            <li><a href="{{ url_for('about') }}">About Us</a></li>
+                            <li><a href="{{ url_for('team') }}">Our People</a></li>
+                            <li><a href="{{ url_for('testimonials') }}">Testimonials</a></li>
                             <li><a href="faq.html">Faq</a></li>
                             <li><a href="pricing.html">Pricing</a></li>
                           </ul>
